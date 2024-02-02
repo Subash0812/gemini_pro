@@ -6,7 +6,7 @@ import streamlit as st
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key='AIzaSyB4FVj_0URVvuCQspEQRVJE3OJwH-UHptE')
 
 def get_gemini_response(input_prompt,image):
     model = genai.GenerativeModel('gemini-pro-vision')
