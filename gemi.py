@@ -1,10 +1,7 @@
 import os 
-from dotenv import load_dotenv
 import google.generativeai as genai
 from PIL import Image
 import streamlit as st
-
-load_dotenv()
 
 genai.configure(api_key='AIzaSyB4FVj_0URVvuCQspEQRVJE3OJwH-UHptE')
 
@@ -63,13 +60,3 @@ if submit:
     response=get_gemini_response(input_prompt,image_data)
     st.subheader("The Response is")
     st.write(response)
-
-
-
-
-# langchain
-# PyPDF2
-# chromadb
-# pdf2image
-# faiss-cpu
-# langchain_google_genai
