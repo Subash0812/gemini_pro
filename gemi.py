@@ -33,7 +33,7 @@ def input_image_setup(uploaded_file):
 
 st.set_page_config(page_title="Health App")
 
-st.header(":orange[Dr. Maddesan's Health App]")
+st.header(":orange[Dr. Gemini's Health App]")
 st.write("### :green[You can upload your meal pic and get a calories split up and suggestions]")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 image=""   
