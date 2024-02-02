@@ -11,7 +11,6 @@ def get_gemini_response(input_prompt,image):
     return response.text
 
 def input_image_setup(uploaded_file):
-    # Check if a file has been uploaded
     if uploaded_file is not None:
         # Read the file into bytes
         bytes_data = uploaded_file.getvalue()
